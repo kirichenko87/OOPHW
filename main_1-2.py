@@ -13,7 +13,15 @@ class Book:
 			print('Такой страница нет в книге')
 
 	def info_book(self):
-		pass
+		print(f'Эта книга {self.title_book} бюыл написана замечательным автором {self.autor_book}, '
+			  f'и в ней {self.number_pages} чудесных страниц ')
 
-	def get_info(self):
-		pass
+class Program:
+	"""
+	Run file
+	"""
+	@staticmethod
+	def main():
+		book_1 = Book('Изучаем python', 'Марк Лутц', 830)
+		book_1.open_book(501)
+		book_1.info_book()
