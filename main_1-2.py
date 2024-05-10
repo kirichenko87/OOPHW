@@ -1,4 +1,10 @@
 class Book:
+	"""
+	Содержит поля:
+	Конструктора
+	open_book
+	info_book
+	"""
 	def __init__(self, title_book: str, autor_book: str, number_pages: int):
 		self.title_book = title_book
 		self.autor_book = autor_book
@@ -16,10 +22,12 @@ class Book:
 		print(f'Эта книга {self.title_book} бюыл написана замечательным автором {self.autor_book}, '
 			  f'и в ней {self.number_pages} чудесных страниц ')
 
+
 class Program:
 	"""
 	Run file
 	"""
+
 	@staticmethod
 	def main():
 		book_1 = Book('Изучаем python', 'Марк Лутц', 830)
