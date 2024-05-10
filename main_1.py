@@ -5,6 +5,10 @@ class Animal:
 		self.age_animal = age_animal
 
 	def sound_animal(self):
-		pass
+		print('Какого ... , кто это... сюда поставил ?!?!')
 	def getinfo(self):
-		pass
+		print(f'Вы выбрали {self.name_animal}, это очень редкий вид {self.type_animal}, сейчас ему {self.age_animal} '
+			  f'издает он прекрасный звук в несвойственной манере {self.sound_animal()}')
+
+
+
