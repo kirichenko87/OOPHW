@@ -1,4 +1,11 @@
 class Animal:
+	"""
+	Содержит поля:
+	Конструктора
+	sound_animal
+	get_info
+	"""
+
 	def __init__(self, name_animal: str, type_animal: str, age_animal: int, sound_txt : str):
 		self.name_animal = name_animal
 		self.type_animal = type_animal
@@ -14,6 +21,9 @@ class Animal:
 
 
 class Program:
+	"""
+	Run file
+	"""
 	@staticmethod
 	def main():
 		animal_1 = Animal('Геннадич', 'Гусь', 6, 'Га-Га')
