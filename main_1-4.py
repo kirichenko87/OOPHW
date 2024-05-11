@@ -22,8 +22,12 @@ class MusicAlbum:
 			print('Трэк не найден')
 
 	def get_info_album(self):
-		pass
+		print(f'Альбом {self.name_album}, был выпушен группой {self.name_album}, на момент выпуска в нем было {len(self.track_list)}')
 class Program:
 	@staticmethod
 	def main():
-		pass
+		track1 = MusicAlbum(f'Наутилус помпилиус', 'яблокитай', ['люди на холме', 'во время дождя', 'три царя'])
+		track1.add_track('Атлантида')
+		track1.delete_track('во время дождя')
+		track1.play_track('три царя')
+		track1.get_info_album()
