@@ -1,4 +1,13 @@
 class PassengerPlane:
+	""" PassengerPlane
+	содерижит в себе следующие поля и методы:
+	конструктор
+	airplane_down
+	airplane_up
+	change_height
+	change_speed
+	get_info
+	"""
 
 	def __init__(self, manufacturer: str, airplane: str, sit_place: int, flight_height: int, speed_airplane: int):
 		self.manufacturer = manufacturer
@@ -33,7 +42,10 @@ class PassengerPlane:
 
 class Program:
 
-
 	@staticmethod
 	def main():
-		pass
+		air_plane1 = ('Boeng', '747', 500, 3000, 900)
+		air_plane1.get_info()
+		air_plane1.airplane_up()
+		air_plane1.airplane_down()
+		air_plane1.change_speed()
